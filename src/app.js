@@ -16,7 +16,7 @@ app.set('view engine' , 'hbs')
 app.set('views', viewspath)
 hbs.registerPartials(partialspath)
 
-//Setup static directory to serve
+//Setup static directory to serve 
 app.use(express.static(publicpath))
 
 app.get('' ,(req,res) => {
@@ -98,7 +98,7 @@ app.get('*',(req,res) => {
         errormessage :'Article not found'
     })
 })
-
-app.listen(port ,() => {
+ 
+app.listen(port,() => {
     console.log('Server is up on port ' + port)
 })
